@@ -19,13 +19,13 @@
 // ******************************************************** //
 // Las ganancias K1, K2 y Kp (GAIN_R_LQR) se calculan a partir
 // del diseño LQR (Etapa 2)
-  const float K1_LQR = 2.2312;    // Ganancia de retroalimentación para X1 (VC1)
-  const float K2_LQR = 1.0716;    // Ganancia de retroalimentación para X2 (VC2)
+  const float K1_LQR = 0.414;    // Ganancia de retroalimentación para X1 (VC1)
+  const float K2_LQR = 0.414;    // Ganancia de retroalimentación para X2 (VC2)
   
 // Ganancia de Feedforward (Kp) calculada para seguimiento:
 // Kp = K1*x1r/r + K2*x2r/r + ur/r = K1*(2) + K2*(1) + 3
 // 2.2312*(2) + 1.0716*(1) + 3 = 8.534
-  const float GAIN_R_LQR = 8.534; // Kp - Ganancia total de feedforward para R
+  const float GAIN_R_LQR = 4.242; // Kp - Ganancia total de feedforward para R
 // ******************************************************** //
 
 
